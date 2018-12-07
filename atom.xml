@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://cxdluckly.github.io/"/>
-  <updated>2018-12-07T11:58:44.776Z</updated>
+  <updated>2018-12-07T12:00:37.642Z</updated>
   <id>http://cxdluckly.github.io/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="http://cxdluckly.github.io/2018/12/07/SQL%E5%91%BD%E4%BB%A4-%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/"/>
     <id>http://cxdluckly.github.io/2018/12/07/SQL命令-数据库操作/</id>
     <published>2018-12-07T11:30:08.000Z</published>
-    <updated>2018-12-07T11:58:44.776Z</updated>
+    <updated>2018-12-07T12:00:37.642Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/2018/12/07/SQL命令-数据库操作/SQL命令/sql.jpg&quot; alt=&quot;sql&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;/2018/12/07/SQL命令-数据库操作/sql.jpg&quot; alt=&quot;sql&quot;&gt;&lt;/p&gt;
 &lt;h1 id=&quot;SQL是什么&quot;&gt;&lt;a href=&quot;#SQL是什么&quot; class=&quot;headerlink&quot; title=&quot;SQL是什么&quot;&gt;&lt;/a&gt;SQL是什么&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;SQL 是用于访问和处理数据库的标准的计算机语言。&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;
     
@@ -82,9 +82,9 @@
       <category term="学习" scheme="http://cxdluckly.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="笔记" scheme="http://cxdluckly.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
-    
       <category term="Git" scheme="http://cxdluckly.github.io/tags/Git/"/>
+    
+      <category term="笔记" scheme="http://cxdluckly.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
