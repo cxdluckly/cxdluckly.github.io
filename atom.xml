@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://cxdluckly.github.io/"/>
-  <updated>2018-12-07T05:31:09.403Z</updated>
+  <updated>2018-12-07T11:58:44.776Z</updated>
   <id>http://cxdluckly.github.io/</id>
   
   <author>
@@ -17,15 +17,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>SQL命令-数据库操作</title>
+    <link href="http://cxdluckly.github.io/2018/12/07/SQL%E5%91%BD%E4%BB%A4-%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/"/>
+    <id>http://cxdluckly.github.io/2018/12/07/SQL命令-数据库操作/</id>
+    <published>2018-12-07T11:30:08.000Z</published>
+    <updated>2018-12-07T11:58:44.776Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/2018/12/07/SQL命令-数据库操作/SQL命令/sql.jpg&quot; alt=&quot;sql&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;SQL是什么&quot;&gt;&lt;a href=&quot;#SQL是什么&quot; class=&quot;headerlink&quot; title=&quot;SQL是什么&quot;&gt;&lt;/a&gt;SQL是什么&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;SQL 是用于访问和处理数据库的标准的计算机语言。&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="学习" scheme="http://cxdluckly.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="笔记" scheme="http://cxdluckly.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="SQL" scheme="http://cxdluckly.github.io/tags/SQL/"/>
+    
+  </entry>
+  
+  <entry>
     <title>markdown语法</title>
     <link href="http://cxdluckly.github.io/2018/12/06/markdown%E8%AF%AD%E6%B3%95/"/>
     <id>http://cxdluckly.github.io/2018/12/06/markdown语法/</id>
     <published>2018-12-06T11:16:40.000Z</published>
-    <updated>2018-12-07T05:31:09.403Z</updated>
+    <updated>2018-12-07T11:38:28.653Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;什么是Markdown：&quot;&gt;&lt;a href=&quot;#什么是Markdown：&quot; class=&quot;headerlink&quot; title=&quot;什么是Markdown：&quot;&gt;&lt;/a&gt;什么是Markdown：&lt;/h1&gt;&lt;blockquote&gt;
+      &lt;p&gt;&lt;img src=&quot;/2018/12/06/markdown语法/markdown.jpg&quot; alt=&quot;markdown&quot; title=&quot;markdown&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;什么是Markdown：&quot;&gt;&lt;a href=&quot;#什么是Markdown：&quot; class=&quot;headerlink&quot; title=&quot;什么是Markdown：&quot;&gt;&lt;/a&gt;什么是Markdown：&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;&amp;emsp;&amp;emsp;Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;
     
     </summary>
@@ -33,9 +58,9 @@
       <category term="学习" scheme="http://cxdluckly.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="markdown" scheme="http://cxdluckly.github.io/tags/markdown/"/>
-    
       <category term="笔记" scheme="http://cxdluckly.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="markdown" scheme="http://cxdluckly.github.io/tags/markdown/"/>
     
   </entry>
   
@@ -44,34 +69,22 @@
     <link href="http://cxdluckly.github.io/2018/12/06/git%E5%91%BD%E4%BB%A4/"/>
     <id>http://cxdluckly.github.io/2018/12/06/git命令/</id>
     <published>2018-12-06T11:05:14.000Z</published>
-    <updated>2018-12-06T11:05:14.131Z</updated>
+    <updated>2018-12-07T10:34:37.531Z</updated>
     
     <summary type="html">
     
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://cxdluckly.github.io/2018/12/03/hello-world/"/>
-    <id>http://cxdluckly.github.io/2018/12/03/hello-world/</id>
-    <published>2018-12-03T07:50:10.869Z</published>
-    <updated>2018-12-06T11:03:50.607Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;br&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;/2018/12/06/git命令/git.jpg&quot; alt=&quot;git&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;什么是Git&quot;&gt;&lt;a href=&quot;#什么是Git&quot; class=&quot;headerlink&quot; title=&quot;什么是Git&quot;&gt;&lt;/a&gt;什么是Git&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;Git是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;
     
     </summary>
     
-      <category term="测试" scheme="http://cxdluckly.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
+      <category term="学习" scheme="http://cxdluckly.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="测试" scheme="http://cxdluckly.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+      <category term="笔记" scheme="http://cxdluckly.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="test" scheme="http://cxdluckly.github.io/tags/test/"/>
+      <category term="Git" scheme="http://cxdluckly.github.io/tags/Git/"/>
     
   </entry>
   
