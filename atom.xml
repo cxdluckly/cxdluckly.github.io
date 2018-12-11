@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cxdluckly.github.io/"/>
-  <updated>2018-12-10T13:45:17.283Z</updated>
+  <updated>2018-12-11T05:35:19.117Z</updated>
   <id>https://cxdluckly.github.io/</id>
   
   <author>
@@ -17,22 +17,66 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>CShare-FileUpload简单使用</title>
-    <link href="https://cxdluckly.github.io/2018/12/10/CShare-FileUpload%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/"/>
-    <id>https://cxdluckly.github.io/2018/12/10/CShare-FileUpload简单使用/</id>
-    <published>2018-12-10T13:44:53.000Z</published>
-    <updated>2018-12-10T13:45:17.283Z</updated>
+    <title>C#-ADO.net的简单使用</title>
+    <link href="https://cxdluckly.github.io/2018/12/11/CSharp-ADO-net%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/"/>
+    <id>https://cxdluckly.github.io/2018/12/11/CSharp-ADO-net的简单使用/</id>
+    <published>2018-12-11T02:47:33.000Z</published>
+    <updated>2018-12-11T05:35:19.117Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;/2018/12/10/CShare-FileUpload简单使用/csharp.jpg&quot; alt=&quot;c#&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;FileUpload&quot;&gt;&lt;a href=&quot;#FileUpload&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;p&gt;&lt;img src=&quot;/2018/12/11/CSharp-ADO-net的简单使用/csharp.jpg&quot; alt=&quot;c#&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;ADO-NET操作&quot;&gt;&lt;a href=&quot;#ADO-NET操作&quot; class=&quot;headerlink&quot; title=&quot;ADO.NET操作&quot;&gt;&lt;/a&gt;ADO.NET操作&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;ADO.NET通过数据处理将数据访问分解为多个可以单独使用或一前一后使用的不连续组件。 ADO.NET包含用于连接到数据库、执行命令和检索结果的 .NET Framework 数据提供程序。 这些结果或者被直接处理，放在 ADO.NET的DataSet 对象中以便以特别的方式向用户公开，并与来自多个源的数据组合；或者在层之间传递。&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="学习" scheme="https://cxdluckly.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="C#" scheme="https://cxdluckly.github.io/tags/C/"/>
+    
+      <category term="笔记" scheme="https://cxdluckly.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SQL命令-数据表操作</title>
+    <link href="https://cxdluckly.github.io/2018/12/11/SQL%E5%91%BD%E4%BB%A4-%E6%95%B0%E6%8D%AE%E8%A1%A8%E6%93%8D%E4%BD%9C/"/>
+    <id>https://cxdluckly.github.io/2018/12/11/SQL命令-数据表操作/</id>
+    <published>2018-12-11T02:25:39.000Z</published>
+    <updated>2018-12-11T02:25:39.732Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/2018/12/11/SQL命令-数据表操作/sql.jpg&quot; alt=&quot;sql&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;SQL是什么&quot;&gt;&lt;a href=&quot;#SQL是什么&quot; class=&quot;headerlink&quot; title=&quot;SQL是什么&quot;&gt;&lt;/a&gt;SQL是什么&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;SQL 是用于访问和处理数据库的标准的计算机语言。&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="学习" scheme="https://cxdluckly.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="笔记" scheme="https://cxdluckly.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="SQL" scheme="https://cxdluckly.github.io/tags/SQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C#-FileUpload简单使用</title>
+    <link href="https://cxdluckly.github.io/2018/12/10/CShare-FileUpload%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/"/>
+    <id>https://cxdluckly.github.io/2018/12/10/CShare-FileUpload简单使用/</id>
+    <published>2018-12-10T13:44:53.000Z</published>
+    <updated>2018-12-11T05:36:35.623Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/2018/12/10/CShare-FileUpload简单使用/csharp.jpg&quot; alt=&quot;c#&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;FileUpload&quot;&gt;&lt;a href=&quot;#FileUpload&quot; class=&quot;headerlink&quot; title=&quot;FileUpload&quot;&gt;&lt;/a&gt;FileUpload&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;显示一个文本框控件和一个浏览按钮，使用户可以选择要上载到服务器的文件。&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     

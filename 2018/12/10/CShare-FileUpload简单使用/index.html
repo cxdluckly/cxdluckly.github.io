@@ -117,19 +117,19 @@
 
 
 
-  <meta name="description" content="FileUpload 显示一个文本框控件和一个浏览按钮，使用户可以选择要上载到服务器的文件。  简单使用FileUpload 实现选择图片并上传到本机的指定目录  12345678910111213141516171819202122232425262728293031323334353637383940414243444546using System;using System.IO;names">
+  <meta name="description" content="FileUpload 显示一个文本框控件和一个浏览按钮，使用户可以选择要上载到服务器的文件。">
 <meta name="keywords" content="C#,笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CShare-FileUpload简单使用">
+<meta property="og:title" content="C#-FileUpload简单使用">
 <meta property="og:url" content="https://cxdluckly.github.io/2018/12/10/CShare-FileUpload简单使用/index.html">
 <meta property="og:site_name" content="蔡晓冬的博客">
-<meta property="og:description" content="FileUpload 显示一个文本框控件和一个浏览按钮，使用户可以选择要上载到服务器的文件。  简单使用FileUpload 实现选择图片并上传到本机的指定目录  12345678910111213141516171819202122232425262728293031323334353637383940414243444546using System;using System.IO;names">
+<meta property="og:description" content="FileUpload 显示一个文本框控件和一个浏览按钮，使用户可以选择要上载到服务器的文件。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://cxdluckly.github.io/2018/12/10/CShare-FileUpload简单使用/csharp.jpg">
-<meta property="og:updated_time" content="2018-12-10T13:45:17.283Z">
+<meta property="og:updated_time" content="2018-12-11T05:36:35.623Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CShare-FileUpload简单使用">
-<meta name="twitter:description" content="FileUpload 显示一个文本框控件和一个浏览按钮，使用户可以选择要上载到服务器的文件。  简单使用FileUpload 实现选择图片并上传到本机的指定目录  12345678910111213141516171819202122232425262728293031323334353637383940414243444546using System;using System.IO;names">
+<meta name="twitter:title" content="C#-FileUpload简单使用">
+<meta name="twitter:description" content="FileUpload 显示一个文本框控件和一个浏览按钮，使用户可以选择要上载到服务器的文件。">
 <meta name="twitter:image" content="https://cxdluckly.github.io/2018/12/10/CShare-FileUpload简单使用/csharp.jpg">
 
 
@@ -149,7 +149,7 @@
   };
 </script>
 
-  <title>CShare-FileUpload简单使用 | 蔡晓冬的博客</title>
+  <title>C#-FileUpload简单使用 | 蔡晓冬的博客</title>
   
 
 
@@ -427,7 +427,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">CShare-FileUpload简单使用
+          <h1 class="post-title" itemprop="name headline">C#-FileUpload简单使用
               
             
           </h1>
@@ -452,12 +452,24 @@
                 
               
 
-              <time title="创建时间：12月 10 2018 21:44:53 / 修改时间：21:45:17" itemprop="dateCreated datePublished" datetime="2018-12-10T21:44:53+08:00">12月 10 2018</time>
+              <time title="创建时间：12月 10 2018 21:44:53" itemprop="dateCreated datePublished" datetime="2018-12-10T21:44:53+08:00">12月 10 2018</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：12月 11 2018 13:36:35" itemprop="dateModified" datetime="2018-12-11T13:36:35+08:00">12月 11 2018</time>
               
             
           </span>
@@ -519,7 +531,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">1.7k</span>
+                <span title="本文字数">1.6k</span>
               
 
               
@@ -533,7 +545,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">2 分钟</span>
+                <span title="阅读时长">1 分钟</span>
               
             </div>
           
@@ -557,10 +569,11 @@
 <h1 id="FileUpload"><a href="#FileUpload" class="headerlink" title="FileUpload"></a>FileUpload</h1><blockquote>
 <p>显示一个文本框控件和一个浏览按钮，使用户可以选择要上载到服务器的文件。</p>
 </blockquote>
+<a id="more"></a>
 <h1 id="简单使用FileUpload"><a href="#简单使用FileUpload" class="headerlink" title="简单使用FileUpload"></a>简单使用FileUpload</h1><blockquote>
 <p>实现选择图片并上传到本机的指定目录</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">using System;</span><br><span class="line">using System.IO;</span><br><span class="line"></span><br><span class="line">namespace WebApplication1</span><br><span class="line">&#123;</span><br><span class="line">    public partial class WebForm1 : System.Web.UI.Page</span><br><span class="line">    &#123;</span><br><span class="line">        protected void Page_Load(object sender, EventArgs e)</span><br><span class="line">        &#123;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        protected void Btn_Save_Click(object sender, EventArgs e)</span><br><span class="line">        &#123;</span><br><span class="line">            string savePath = @&quot;D:\Images\&quot;;//图片保存路径</span><br><span class="line">            if (Directory.Exists(savePath)==false)//判断保存路径是否存在</span><br><span class="line">            &#123;//创建保存路径</span><br><span class="line">                DirectoryInfo dir = Directory.CreateDirectory(savePath);</span><br><span class="line">            &#125;</span><br><span class="line">            string filename = null;</span><br><span class="line">            string[] fileType = &#123; &quot;.jpg&quot;, &quot;.png&quot;, &quot;.gif&quot;, &quot;.bmp&quot; &#125;;</span><br><span class="line"></span><br><span class="line">            if (FileUpload1.HasFile)</span><br><span class="line">            &#123;</span><br><span class="line"></span><br><span class="line">                for (int i = 0; i &lt; fileType.Length; i++)</span><br><span class="line">                &#123;</span><br><span class="line">                    if (Path.GetExtension(FileUpload1.FileName).ToLower()==fileType[i])//将文件后缀名转化为小写并与fileType对比</span><br><span class="line">                    &#123;</span><br><span class="line">                        filename = FileUpload1.FileName.ToString();</span><br><span class="line">                        savePath += filename;</span><br><span class="line"></span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                FileUpload1.SaveAs(savePath);//保存文件</span><br><span class="line">                Response.Write(&quot;&lt;script&gt;alert(&apos;你成功上传了一个文件到：‘D:/Images’文件夹中&apos;);&lt;/script&gt;&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">            else</span><br><span class="line">            &#123;</span><br><span class="line">                Response.Write(&quot;&lt;script&gt;alert(&apos;上传失败&apos;);&lt;/script&gt;&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> System.IO;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">WebApplication1</span></span><br><span class="line">&#123;</span><br><span class="line">    public partial class WebForm1 : System.Web.UI.Page</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">Page_Load</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">Btn_Save_Click</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="keyword">string</span> savePath = <span class="string">@"D:\Images\"</span>;<span class="comment">//图片保存路径</span></span><br><span class="line">            <span class="keyword">if</span> (Directory.Exists(savePath)==<span class="literal">false</span>)<span class="comment">//判断保存路径是否存在</span></span><br><span class="line">            &#123;<span class="comment">//创建保存路径</span></span><br><span class="line">                DirectoryInfo dir = Directory.CreateDirectory(savePath);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">string</span> filename = <span class="literal">null</span>;</span><br><span class="line">            <span class="keyword">string</span>[] fileType = &#123; <span class="string">".jpg"</span>, <span class="string">".png"</span>, <span class="string">".gif"</span>, <span class="string">".bmp"</span> &#125;;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (FileUpload1.HasFile)</span><br><span class="line">            &#123;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; fileType.Length; i++)</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="keyword">if</span> (Path.GetExtension(FileUpload1.FileName).ToLower()==fileType[i])<span class="comment">//将文件后缀名转化为小写并与fileType对比</span></span><br><span class="line">                    &#123;</span><br><span class="line">                        filename = FileUpload1.FileName.ToString();</span><br><span class="line">                        savePath += filename;</span><br><span class="line"></span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                FileUpload1.SaveAs(savePath);<span class="comment">//保存文件</span></span><br><span class="line">                Response.Write(<span class="string">"&lt;script&gt;alert('你成功上传了一个文件到：‘D:/Images’文件夹中');&lt;/script&gt;"</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                Response.Write(<span class="string">"&lt;script&gt;alert('上传失败');&lt;/script&gt;"</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -616,6 +629,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/11/SQL命令-数据表操作/" rel="prev" title="SQL命令-数据表操作">
+                SQL命令-数据表操作 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -693,7 +710,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -842,7 +859,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">6k</span>
+    <span title="站点总字数">13k</span>
   
 
   
@@ -851,7 +868,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">5 分钟</span>
+    <span title="站点阅读时长">12 分钟</span>
   
 </div>
 
