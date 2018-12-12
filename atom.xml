@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cxdluckly.github.io/"/>
-  <updated>2018-12-11T05:48:29.262Z</updated>
+  <updated>2018-12-12T13:32:58.890Z</updated>
   <id>https://cxdluckly.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C#-ADO.Net的简单使用二</title>
+    <link href="https://cxdluckly.github.io/2018/12/12/DataAdapter%E4%B8%8EDataTable/"/>
+    <id>https://cxdluckly.github.io/2018/12/12/DataAdapter与DataTable/</id>
+    <published>2018-12-12T09:29:32.000Z</published>
+    <updated>2018-12-12T13:32:58.890Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/2018/12/12/DataAdapter与DataTable/csharp.jpg&quot; alt=&quot;c#&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;SqlDataAdapter&quot;&gt;&lt;a href=&quot;#SqlDataAdapter&quot; class=&quot;headerlink&quot; title=&quot;SqlDataAdapter&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://baike.baidu.com/item/SqlDataAdapter/3280660?fr=aladdin&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;SqlDataAdapter&lt;/a&gt;&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;SqlDataAdapter是 DataSet和 SQL Server之间的桥接器。SqlDataAdapter通过对数据源使用适当的Transact-SQL语句映射 Fill（它可填充DataSet中的数据以匹配数据源中的数据）和 Update（它可更改数据源中的数据以匹配 DataSet中的数据）来提供这一桥接。当SqlDataAdapter填充 DataSet时，它为返回的数据创建必需的表和列（如果这些表和列尚不存在）。&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="学习" scheme="https://cxdluckly.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="C#" scheme="https://cxdluckly.github.io/tags/C/"/>
+    
+      <category term="笔记" scheme="https://cxdluckly.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>C#-ADO.net的简单使用</title>
