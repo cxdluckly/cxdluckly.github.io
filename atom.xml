@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cxdluckly.github.io/"/>
-  <updated>2018-12-12T13:32:58.890Z</updated>
+  <updated>2018-12-13T12:33:14.796Z</updated>
   <id>https://cxdluckly.github.io/</id>
   
   <author>
@@ -15,6 +15,59 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SQL-数据操纵</title>
+    <link href="https://cxdluckly.github.io/2018/12/13/SQL-%E6%95%B0%E6%8D%AE%E6%93%8D%E7%BA%B5/"/>
+    <id>https://cxdluckly.github.io/2018/12/13/SQL-数据操纵/</id>
+    <published>2018-12-13T12:02:06.000Z</published>
+    <updated>2018-12-13T12:33:14.796Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/2018/12/13/SQL-数据操纵/sql.jpg&quot; alt=&quot;sql&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="学习" scheme="https://cxdluckly.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="笔记" scheme="https://cxdluckly.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="SQL" scheme="https://cxdluckly.github.io/tags/SQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C#-数组-集合-结构-枚举的简单应用</title>
+    <link href="https://cxdluckly.github.io/2018/12/13/Csharp-%E6%95%B0%E7%BB%84-%E9%9B%86%E5%90%88-%E7%BB%93%E6%9E%84-%E6%9E%9A%E4%B8%BE%E7%9A%84%E7%AE%80%E5%8D%95%E5%BA%94%E7%94%A8/"/>
+    <id>https://cxdluckly.github.io/2018/12/13/Csharp-数组-集合-结构-枚举的简单应用/</id>
+    <published>2018-12-13T08:37:10.000Z</published>
+    <updated>2018-12-13T11:49:03.724Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/2018/12/13/Csharp-数组-集合-结构-枚举的简单应用/csharp.jpg&quot; alt=&quot;c#&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;数组&quot;&gt;&lt;a href=&quot;#数组&quot; class=&quot;headerlink&quot; title=&quot;数组&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://baike.baidu.com/item/%E6%95%B0%E7%BB%84&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;数组&lt;/a&gt;&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;所谓数组，是有序的元素序列。 [1]  若将有限个类型相同的变量的集合命名，那么这个名称为数组名。组成数组的各个变量称为数组的分量，也称为数组的元素，有时也称为下标变量。用于区分数组的各个元素的数字编号称为下标。数组是在程序设计中，为了处理方便， 把具有相同类型的若干元素按无序的形式组织起来的一种形式。 [1]  这些无序排列的同类数据元素的集合称为数组。&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="学习" scheme="https://cxdluckly.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="C#" scheme="https://cxdluckly.github.io/tags/C/"/>
+    
+      <category term="笔记" scheme="https://cxdluckly.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>C#-ADO.Net的简单使用二</title>
