@@ -449,7 +449,7 @@
                 
               
 
-              <time title="创建时间：12月 13 2018 20:02:06 / 修改时间：20:33:14" itemprop="dateCreated datePublished" datetime="2018-12-13T20:02:06+08:00">12月 13 2018</time>
+              <time title="创建时间：12月 13 2018 20:02:06 / 修改时间：20:34:35" itemprop="dateCreated datePublished" datetime="2018-12-13T20:02:06+08:00">12月 13 2018</time>
             
 
             
@@ -509,7 +509,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">773</span>
+                <span title="本文字数">774</span>
               
 
               
@@ -544,56 +544,19 @@
 
       
         
-          
-            <p><img src="/2018/12/13/SQL-数据操纵/sql.jpg" alt="sql"></p>
+          <p><img src="/2018/12/13/SQL-数据操纵/sql.jpg" alt="sql"></p>
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
 <p>SQL是一种介于关系代数与关系演算之间的语言，其功能包括数据定义，数据操纵，数据查询，数据控制4个方面，是通用的，功能极强的关系数据库标准语言。完成数据定义，数据操纵，数据查询，数据控制的核心功能只用了10个动词，即：  Create,Drop,Alter,Insert,Update,Delete,Select,Grant,Deny,Revoke.参见下表：</p>
 </blockquote>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>SQL功能</th>
-<th>动词</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td> 数据定义</td>
-<td>Create,Drop,Alter</td>
-<td></td>
-</tr>
-<tr>
-<td> 数据操纵</td>
-<td>Insert,Update,Delete</td>
-<td></td>
-</tr>
-<tr>
-<td> 数据查询</td>
-<td>Select</td>
-<td></td>
-</tr>
-<tr>
-<td> 数据控制</td>
-<td>Grant,Deny,Revoke</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h1 id="数据插入"><a href="#数据插入" class="headerlink" title="数据插入"></a>数据插入</h1><blockquote>
-<p>ColumName与ValuesList的值必须意义对应。<br>具有默认值的列可以使用Default关键字代替。<br>不能为标识列指定值。<br>为UUID列赋值时要是有NEWid函数。<br>插入的数据应该符合各种约束的要求。<br>插入数据时不能违法参照完整性约束，即外键的值必须取自被参照表的主键值或为空。应先为父表插入数据，然后为子表插入数据。</p>
-</blockquote>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Insert</span> <span class="keyword">Into</span> &lt;TableName&gt; (ColumName)</span><br><span class="line">    <span class="keyword">Values</span>(ValuesList)</span><br></pre></td></tr></table></figure>
-<h1 id="数据更新"><a href="#数据更新" class="headerlink" title="数据更新"></a>数据更新</h1><blockquote>
-<p>更新的数据应该符合各种约束的要求。</p>
-</blockquote>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Update</span> &lt;TableName&gt;</span><br><span class="line"><span class="keyword">Set</span> ColumName1=Value1,ColumName2=Value2</span><br><span class="line"><span class="keyword">Where</span> condition expression</span><br></pre></td></tr></table></figure>
-<h1 id="删除数据"><a href="#删除数据" class="headerlink" title="删除数据"></a>删除数据</h1><blockquote>
-<p>如果省略了Where子句，则会删除整个表的数据。<br>如果两个表存在外键约束，应先为父表删除数据，然后为子表删除数据。</p>
-</blockquote>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Delete</span> <span class="keyword">From</span> &lt;TableName&gt;</span><br><span class="line"><span class="keyword">Where</span> condition expression</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/12/13/SQL-数据操纵/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+         
+          <!--/noindex-->
         
       
     </div>

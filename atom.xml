@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cxdluckly.github.io/"/>
-  <updated>2018-12-13T12:33:14.796Z</updated>
+  <updated>2018-12-13T12:34:35.472Z</updated>
   <id>https://cxdluckly.github.io/</id>
   
   <author>
@@ -21,18 +21,14 @@
     <link href="https://cxdluckly.github.io/2018/12/13/SQL-%E6%95%B0%E6%8D%AE%E6%93%8D%E7%BA%B5/"/>
     <id>https://cxdluckly.github.io/2018/12/13/SQL-数据操纵/</id>
     <published>2018-12-13T12:02:06.000Z</published>
-    <updated>2018-12-13T12:33:14.796Z</updated>
+    <updated>2018-12-13T12:34:35.472Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;/2018/12/13/SQL-数据操纵/sql.jpg&quot; alt=&quot;sql&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;p&gt;&lt;img src=&quot;/2018/12/13/SQL-数据操纵/sql.jpg&quot; alt=&quot;sql&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;SQL是一种介于关系代数与关系演算之间的语言，其功能包括数据定义，数据操纵，数据查询，数据控制4个方面，是通用的，功能极强的关系数据库标准语言。完成数据定义，数据操纵，数据查询，数据控制的核心功能只用了10个动词，即：  Create,Drop,Alter,Insert,Update,Delete,Select,Grant,Deny,Revoke.参见下表：&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
