@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://cxdluckly.coding.me/"/>
-  <updated>2018-12-13T12:34:35.472Z</updated>
+  <updated>2018-12-14T09:41:10.962Z</updated>
   <id>http://cxdluckly.coding.me/</id>
   
   <author>
@@ -15,6 +15,70 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C#-面向对象的特征-继承，封装，多态，抽象+接口</title>
+    <link href="http://cxdluckly.coding.me/2018/12/14/CSharp-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%89%B9%E5%BE%81/"/>
+    <id>http://cxdluckly.coding.me/2018/12/14/CSharp-面向对象特征/</id>
+    <published>2018-12-14T07:07:18.000Z</published>
+    <updated>2018-12-14T09:41:10.962Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/2018/12/14/CSharp-面向对象特征/csharp.jpg&quot; alt=&quot;c#&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;常用的访问修饰符&quot;&gt;&lt;a href=&quot;#常用的访问修饰符&quot; class=&quot;headerlink&quot; title=&quot;常用的访问修饰符&quot;&gt;&lt;/a&gt;常用的访问修饰符&lt;/h1&gt;&lt;div class=&quot;table-container&quot;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;名称&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;public&lt;/td&gt;
+&lt;td&gt;公共的，不限制对该类的访问&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;protected&lt;/td&gt;
+&lt;td&gt;受保护的，只能从其所在的类或子类进行访问&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;private&lt;/td&gt;
+&lt;td&gt;私有的，只有在.net中的的应用程序或库中才能访问&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;internal&lt;/td&gt;
+&lt;td&gt;内部的，只有其所在的类才能访问&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;abstract&lt;/td&gt;
+&lt;td&gt;抽象类，不允许建立类的实例，只允许继承类&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sealed&lt;/td&gt;
+&lt;td&gt;密封类，不允许类被继承&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="学习" scheme="http://cxdluckly.coding.me/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="C#" scheme="http://cxdluckly.coding.me/tags/C/"/>
+    
+      <category term="笔记" scheme="http://cxdluckly.coding.me/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>SQL-数据操纵</title>
