@@ -404,6 +404,240 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.caixiaodong.xyz/2018/12/16/SQL-数据查询/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="蔡晓冬">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="蔡晓冬的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/12/16/SQL-数据查询/" class="post-title-link" itemprop="https://www.caixiaodong.xyz/index.html">SQL-数据查询</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：12月 16 2018 19:54:21 / 修改时间：21:06:34" itemprop="dateCreated datePublished" datetime="2018-12-16T19:54:21+08:00">12月 16 2018</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/学习/" itemprop="url" rel="index"><span itemprop="name">学习</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/12/16/SQL-数据查询/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/12/16/SQL-数据查询/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">1.5k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="/2018/12/16/SQL-数据查询/sql.jpg" alt="sql"></p>
+<h1 id="数据查询语句的基本结构"><a href="#数据查询语句的基本结构" class="headerlink" title="数据查询语句的基本结构"></a>数据查询语句的基本结构</h1><blockquote>
+<p>数据查询语句可完成对关系数据表的集合运算(交，并，差)和关系代数运算(投影，选择，连接)，还可以对数据表进行排序与统计汇总运算，如求出某数据项的和，平均值，最大最小值等。因此，数据查询语句具有极强的查询与统计汇总功能。它的一般格式如下。</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Select</span> [All|<span class="keyword">Distinct</span>] &lt;目标表达式<span class="number">1</span>&gt;[,···n]</span><br><span class="line"><span class="keyword">From</span> &lt;表名|视图名&gt;[,···n]</span><br><span class="line">[<span class="keyword">Where</span> &lt;条件表达式&gt;]</span><br><span class="line">[<span class="keyword">Group</span> <span class="keyword">By</span> &lt;表达式列表&gt;]</span><br><span class="line">[<span class="keyword">Having</span> &lt;条件表达式&gt;]</span><br><span class="line">[<span class="keyword">Order</span> <span class="keyword">By</span> &lt;表达式列表&gt; [<span class="keyword">Asc</span>|<span class="keyword">Desc</span>]]</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><code>Select [All|Distinct] &lt;目标表达式1&gt;[,···n]</code>时投影运算，<code>目标表达式</code>是你所想要查找的数据列，<code>Distinct</code>的作用是消除查询结果的重复列<br><code>From &lt;表名|视图名&gt;[,···n]</code>指定了查询的数据源<br><code>[Where &lt;条件表达式&gt;]</code>为选择运算，指定了所要查询数据所要满足的筛选条件<br><code>[Group By &lt;表达式列表&gt;]</code>为分组语句，通常需要在分组的情况下进行统计运算<br><code>[Having &lt;条件表达式&gt;]</code>为附加选择运算，用来向使用了Group By子句的查询语句添加筛选条件。只能在Group By子句后使用<br><code>[Order By &lt;表达式列表&gt; [Asc|Desc]]</code>为排序运算，为查询结果定义是Asc(升序)显示还是Desc(Desc)显示</p>
+</blockquote>
+<h1 id="基本查询语句"><a href="#基本查询语句" class="headerlink" title="基本查询语句"></a>基本查询语句</h1><blockquote>
+<p>简单查询由Select···From,Where,Group By,Having,Order By几个基本子句构成，子句可以全部出现，也可以部分出现</p>
+</blockquote>
+<h1 id="联合查询语句"><a href="#联合查询语句" class="headerlink" title="联合查询语句"></a>联合查询语句</h1><blockquote>
+<p>在SQL Server中提供的集合运算有Union(并)，Intersect(交)，Except(差)。</p>
+</blockquote>
+<h1 id="内连接"><a href="#内连接" class="headerlink" title="内连接"></a>内连接</h1><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Select</span> Column1 ···</span><br><span class="line"><span class="keyword">From</span> Table1</span><br><span class="line">    <span class="keyword">join</span> Table2 <span class="keyword">on</span> Table1.Column1=Table2.Column2</span><br></pre></td></tr></table></figure>
+<h1 id="等值连接"><a href="#等值连接" class="headerlink" title="等值连接"></a>等值连接</h1><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Select</span> Cloumn ···</span><br><span class="line"><span class="keyword">From</span> Table1,Table2</span><br><span class="line"><span class="keyword">Where</span> Table1.Column1=Table2.Column2</span><br></pre></td></tr></table></figure>
+<h1 id="外连接"><a href="#外连接" class="headerlink" title="外连接"></a>外连接</h1><blockquote>
+<p>内连接是将两个表进行连接，只列出满足连接条件的行。如果一个表中的某一字段，在另张表中缺少对应的字段，那么在内连接查询中是默认不显示的。外连接则打破了这种限制。<br>其作用于两张表，有左外连接，右外连接，全外连接三种。</p>
+</blockquote>
+<h2 id="左外连接"><a href="#左外连接" class="headerlink" title="左外连接"></a>左外连接</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Select</span> Column1 ···</span><br><span class="line"><span class="keyword">From</span> Table1</span><br><span class="line">    <span class="keyword">Left</span> <span class="keyword">join</span> Table2 <span class="keyword">on</span> Table1.Column1=Table2.Column2</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>对应的右外连接是<code>Right</code>全外连接是<code>Full</code></p>
+</blockquote>
+<h1 id="自连接"><a href="#自连接" class="headerlink" title="自连接"></a>自连接</h1><blockquote>
+<p>连接操作不仅可以是两张不同的表，还可以在同一张表中进行。<br>要进行自连接操作，必须为表取别名</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Select</span> A.Column1,B.Column2</span><br><span class="line"><span class="keyword">From</span> Table1 <span class="keyword">As</span> A</span><br><span class="line">    <span class="keyword">Join</span> Table1 <span class="keyword">As</span> B <span class="keyword">On</span> A.Column=B.Column</span><br></pre></td></tr></table></figure>
+<h1 id="子查询"><a href="#子查询" class="headerlink" title="子查询"></a>子查询</h1><blockquote>
+<p>与程序设计类似，Select语句也可以嵌套，形成子查询。<br>子查询也可以在Insert，Update，Delete语句使用</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Select</span> Column1 ···</span><br><span class="line"><span class="keyword">From</span> Table1</span><br><span class="line"><span class="keyword">Where</span> 表达式，运算符 (<span class="keyword">Select</span> 子查询)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>值得注意的是<strong>在子查询中不能使用Order By语句</strong><br>运算符有五类分别是：关系运算符（+-&gt;&lt;=!等），<code>In</code>，<code>Exists</code>，<code>Any</code>，<code>All</code>.</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+    
+    <div>
+      
+    </div>
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://www.caixiaodong.xyz/2018/12/15/Csharp-索引-委托-事件/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -449,12 +683,24 @@
                 
               
 
-              <time title="创建时间：12月 15 2018 13:59:52 / 修改时间：18:48:17" itemprop="dateCreated datePublished" datetime="2018-12-15T13:59:52+08:00">12月 15 2018</time>
+              <time title="创建时间：12月 15 2018 13:59:52" itemprop="dateCreated datePublished" datetime="2018-12-15T13:59:52+08:00">12月 15 2018</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：12月 16 2018 22:17:41" itemprop="dateModified" datetime="2018-12-16T22:17:41+08:00">12月 16 2018</time>
               
             
           </span>
@@ -2333,227 +2579,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.caixiaodong.xyz/2018/12/06/markdown语法/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="蔡晓冬">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="蔡晓冬的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2018/12/06/markdown语法/" class="post-title-link" itemprop="https://www.caixiaodong.xyz/index.html">markdown语法</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：12月 6 2018 19:16:40" itemprop="dateCreated datePublished" datetime="2018-12-06T19:16:40+08:00">12月 6 2018</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：12月 7 2018 19:38:28" itemprop="dateModified" datetime="2018-12-07T19:38:28+08:00">12月 7 2018</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/学习/" itemprop="url" rel="index"><span itemprop="name">学习</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/12/06/markdown语法/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/12/06/markdown语法/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
-                
-                <span title="本文字数">2k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">2 分钟</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p><img src="/2018/12/06/markdown语法/markdown.jpg" alt="markdown" title="markdown"></p>
-<h1 id="什么是Markdown："><a href="#什么是Markdown：" class="headerlink" title="什么是Markdown："></a>什么是Markdown：</h1><blockquote>
-<p>&emsp;&emsp;Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。<br></p></blockquote>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2018/12/06/markdown语法/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-         
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-       
-    
-    
-
-    
-    
-    <div>
-      
-    </div>
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2605,7 +2630,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -2738,7 +2763,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">47k</span>
+    <span title="站点总字数">48k</span>
   
 
   
@@ -2747,7 +2772,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">42 分钟</span>
+    <span title="站点阅读时长">44 分钟</span>
   
 </div>
 
