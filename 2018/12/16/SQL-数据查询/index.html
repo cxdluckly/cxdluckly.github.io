@@ -117,19 +117,19 @@
 
 
 
-  <meta name="description" content="数据查询语句的基本结构 数据查询语句可完成对关系数据表的集合运算(交，并，差)和关系代数运算(投影，选择，连接)，还可以对数据表进行排序与统计汇总运算，如求出某数据项的和，平均值，最大最小值等。因此，数据查询语句具有极强的查询与统计汇总功能。它的一般格式如下。  123456Select [All|Distinct] &amp;lt;目标表达式1&amp;gt;[,···n]From &amp;lt;表名|视图名&amp;gt">
+  <meta name="description" content="数据查询语句的基本结构 数据查询语句可完成对关系数据表的集合运算(交，并，差)和关系代数运算(投影，选择，连接)，还可以对数据表进行排序与统计汇总运算，如求出某数据项的和，平均值，最大最小值等。因此，数据查询语句具有极强的查询与统计汇总功能。它的一般格式如下。">
 <meta name="keywords" content="笔记,SQL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SQL-数据查询">
 <meta property="og:url" content="https://www.caixiaodong.xyz/2018/12/16/SQL-数据查询/index.html">
 <meta property="og:site_name" content="蔡晓冬的博客">
-<meta property="og:description" content="数据查询语句的基本结构 数据查询语句可完成对关系数据表的集合运算(交，并，差)和关系代数运算(投影，选择，连接)，还可以对数据表进行排序与统计汇总运算，如求出某数据项的和，平均值，最大最小值等。因此，数据查询语句具有极强的查询与统计汇总功能。它的一般格式如下。  123456Select [All|Distinct] &amp;lt;目标表达式1&amp;gt;[,···n]From &amp;lt;表名|视图名&amp;gt">
+<meta property="og:description" content="数据查询语句的基本结构 数据查询语句可完成对关系数据表的集合运算(交，并，差)和关系代数运算(投影，选择，连接)，还可以对数据表进行排序与统计汇总运算，如求出某数据项的和，平均值，最大最小值等。因此，数据查询语句具有极强的查询与统计汇总功能。它的一般格式如下。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://www.caixiaodong.xyz/2018/12/16/SQL-数据查询/sql.jpg">
-<meta property="og:updated_time" content="2018-12-17T04:53:35.780Z">
+<meta property="og:updated_time" content="2018-12-17T05:58:53.399Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SQL-数据查询">
-<meta name="twitter:description" content="数据查询语句的基本结构 数据查询语句可完成对关系数据表的集合运算(交，并，差)和关系代数运算(投影，选择，连接)，还可以对数据表进行排序与统计汇总运算，如求出某数据项的和，平均值，最大最小值等。因此，数据查询语句具有极强的查询与统计汇总功能。它的一般格式如下。  123456Select [All|Distinct] &amp;lt;目标表达式1&amp;gt;[,···n]From &amp;lt;表名|视图名&amp;gt">
+<meta name="twitter:description" content="数据查询语句的基本结构 数据查询语句可完成对关系数据表的集合运算(交，并，差)和关系代数运算(投影，选择，连接)，还可以对数据表进行排序与统计汇总运算，如求出某数据项的和，平均值，最大最小值等。因此，数据查询语句具有极强的查询与统计汇总功能。它的一般格式如下。">
 <meta name="twitter:image" content="https://www.caixiaodong.xyz/2018/12/16/SQL-数据查询/sql.jpg">
 
 
@@ -469,7 +469,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：12月 17 2018 12:53:35" itemprop="dateModified" datetime="2018-12-17T12:53:35+08:00">12月 17 2018</time>
+                <time title="修改时间：12月 17 2018 13:58:53" itemprop="dateModified" datetime="2018-12-17T13:58:53+08:00">12月 17 2018</time>
               
             
           </span>
@@ -569,6 +569,7 @@
 <h1 id="数据查询语句的基本结构"><a href="#数据查询语句的基本结构" class="headerlink" title="数据查询语句的基本结构"></a>数据查询语句的基本结构</h1><blockquote>
 <p>数据查询语句可完成对关系数据表的集合运算(交，并，差)和关系代数运算(投影，选择，连接)，还可以对数据表进行排序与统计汇总运算，如求出某数据项的和，平均值，最大最小值等。因此，数据查询语句具有极强的查询与统计汇总功能。它的一般格式如下。</p>
 </blockquote>
+<a id="more"></a>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Select</span> [All|<span class="keyword">Distinct</span>] &lt;目标表达式<span class="number">1</span>&gt;[,···n]</span><br><span class="line"><span class="keyword">From</span> &lt;表名|视图名&gt;[,···n]</span><br><span class="line">[<span class="keyword">Where</span> &lt;条件表达式&gt;]</span><br><span class="line">[<span class="keyword">Group</span> <span class="keyword">By</span> &lt;表达式列表&gt;]</span><br><span class="line">[<span class="keyword">Having</span> &lt;条件表达式&gt;]</span><br><span class="line">[<span class="keyword">Order</span> <span class="keyword">By</span> &lt;表达式列表&gt; [<span class="keyword">Asc</span>|<span class="keyword">Desc</span>]]</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p><code>Select [All|Distinct] &lt;目标表达式1&gt;[,···n]</code>时投影运算，<code>目标表达式</code>是你所想要查找的数据列，<code>Distinct</code>的作用是消除查询结果的重复列<br><code>From &lt;表名|视图名&gt;[,···n]</code>指定了查询的数据源<br><code>[Where &lt;条件表达式&gt;]</code>为选择运算，指定了所要查询数据所要满足的筛选条件<br><code>[Group By &lt;表达式列表&gt;]</code>为分组语句，通常需要在分组的情况下进行统计运算<br><code>[Having &lt;条件表达式&gt;]</code>为附加选择运算，用来向使用了Group By子句的查询语句添加筛选条件。只能在Group By子句后使用<br><code>[Order By &lt;表达式列表&gt; [Asc|Desc]]</code>为排序运算，为查询结果定义是Asc(升序)显示还是Desc(Desc)显示</p>
