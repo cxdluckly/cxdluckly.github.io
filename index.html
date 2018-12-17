@@ -449,12 +449,24 @@
                 
               
 
-              <time title="创建时间：12月 16 2018 19:54:21 / 修改时间：21:06:34" itemprop="dateCreated datePublished" datetime="2018-12-16T19:54:21+08:00">12月 16 2018</time>
+              <time title="创建时间：12月 16 2018 19:54:21" itemprop="dateCreated datePublished" datetime="2018-12-16T19:54:21+08:00">12月 16 2018</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：12月 17 2018 12:53:35" itemprop="dateModified" datetime="2018-12-17T12:53:35+08:00">12月 17 2018</time>
               
             
           </span>
@@ -509,7 +521,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">1.5k</span>
+                <span title="本文字数">3.2k</span>
               
 
               
@@ -523,7 +535,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">1 分钟</span>
+                <span title="阅读时长">3 分钟</span>
               
             </div>
           
@@ -579,6 +591,82 @@
 <blockquote>
 <p>值得注意的是<strong>在子查询中不能使用Order By语句</strong><br>运算符有五类分别是：关系运算符（+-&gt;&lt;=!等），<code>In</code>，<code>Exists</code>，<code>Any</code>，<code>All</code>.</p>
 </blockquote>
+<h2 id="返回结果集的子查询"><a href="#返回结果集的子查询" class="headerlink" title="返回结果集的子查询"></a>返回结果集的子查询</h2><h3 id="In子查询"><a href="#In子查询" class="headerlink" title="In子查询"></a>In子查询</h3><blockquote>
+<p>查询与学生<code>李明</code>同班级的学生信息。<br>因为名字叫做李明的同学很多，所有对应的班级编号也很多，应该使用<code>In</code>子查询实现</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Select</span> <span class="keyword">ID</span> 学号，Sname，姓名,ClassID 班级编号</span><br><span class="line"><span class="keyword">From</span> Student</span><br><span class="line"><span class="keyword">Where</span> ClassID <span class="keyword">in</span> (<span class="keyword">Select</span> ClassID</span><br><span class="line">                    <span class="keyword">From</span> Studnet</span><br><span class="line">                    <span class="keyword">Where</span> Sname=<span class="string">'李明'</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="Any与All子查询"><a href="#Any与All子查询" class="headerlink" title="Any与All子查询"></a>Any与All子查询</h3><blockquote>
+<p>当查询结果返回单值时可以使用关系运算符，但当查询结果返回多值时就需要用关系运算符<code>Any</code>与<code>All</code>组合运算符。</p>
+</blockquote>
+<p><code>Any</code>与<code>All</code>常用的组合方式</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <code>&gt;Any</code></td>
+<td>大于集合中的任意一个值，即大于最小值</td>
+<td></td>
+</tr>
+<tr>
+<td> <code>=Any</code></td>
+<td>等于集合中的任意一值</td>
+<td></td>
+</tr>
+<tr>
+<td> <code>&lt;Any</code></td>
+<td>小于集合中的任意一值，即小于最大值</td>
+<td></td>
+</tr>
+<tr>
+<td> <code>&gt;All</code></td>
+<td>大于集合中所有值，即大于最大值</td>
+<td></td>
+</tr>
+<tr>
+<td> <code>&lt;All</code></td>
+<td>小于集合中的所有值，即小于最小值</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p><strong>其中<code>=Any</code>等同于<code>In</code>，不存在<code>=All</code>子查询</strong></p>
+</blockquote>
+<h2 id="相关子查询"><a href="#相关子查询" class="headerlink" title="相关子查询"></a>相关子查询</h2><blockquote>
+<p>相关子查询与嵌套子查询有一个本质区别，其查询条件依赖于外部父查询中的某一字段值，所有子查询不能单独运行。<br>嵌套子查询中的子查询只执行一次，而相关子查询中的查询需要重复的去执行。具体过程如下</p>
+</blockquote>
+<ul>
+<li>父查询每执行一次，子查询都会被执行一次，并且每一次父查询都将查询引用字段的值传递给子查询。</li>
+<li>如果子查询中的任意元组与其匹配，父查询就会返回结果元组。</li>
+<li>再返回到第一步，直至处理完父查询的每一元组。</li>
+</ul>
+<blockquote>
+<p>查询成绩高于本人平均成绩的学号，成绩</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Select</span> <span class="keyword">ID</span> 学号,Pscore 成绩</span><br><span class="line"><span class="keyword">From</span> Score <span class="keyword">As</span> A</span><br><span class="line"><span class="keyword">Where</span> Pscore&gt;(<span class="keyword">Select</span> <span class="keyword">avg</span>(Pscore)</span><br><span class="line">                <span class="keyword">From</span> Score <span class="keyword">As</span> B</span><br><span class="line">                <span class="keyword">Where</span> A.ID=B.ID)</span><br></pre></td></tr></table></figure>
+<h2 id="Exists子查询与Not-Exists子查询"><a href="#Exists子查询与Not-Exists子查询" class="headerlink" title="Exists子查询与Not Exists子查询"></a>Exists子查询与Not Exists子查询</h2><blockquote>
+<p><code>Exists</code>子查询只会产生逻辑上的<code>True</code>或<code>False</code>,并不会返回结果值。所以父查询不会引用子查询中的值。</p>
+<blockquote>
+<p>当子查询中的结果集不为<code>nill</code>时返回<code>True</code>,否则返回<code>False</code><br><code>Not Exists</code>子查询与<code>Exists</code>相反</p>
+</blockquote>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Select</span> <span class="keyword">ID</span> 学号,Sname 姓名,ClassID 班级编号</span><br><span class="line"><span class="keyword">From</span> Student <span class="keyword">AS</span> A</span><br><span class="line"><span class="keyword">Where</span> <span class="keyword">Exists</span> (<span class="keyword">Select</span> *</span><br><span class="line">                    <span class="keyword">From</span> Studnet <span class="keyword">AS</span> B</span><br><span class="line">                    <span class="keyword">Where</span> A.ID=B.ID <span class="keyword">And</span> B.Sname=<span class="string">'李明'</span>)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>以上语句查询了与李明同班同学的相关信息</p>
+</blockquote>
+<h1 id="基于数据查询的数据操作"><a href="#基于数据查询的数据操作" class="headerlink" title="基于数据查询的数据操作"></a>基于数据查询的数据操作</h1><h2 id="联合使用Select与Insert语句"><a href="#联合使用Select与Insert语句" class="headerlink" title="联合使用Select与Insert语句"></a>联合使用Select与Insert语句</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Insert</span> <span class="keyword">Into</span> TableName1 (ColumnNAme1)</span><br><span class="line"><span class="keyword">Select</span> ColumnName2</span><br><span class="line"><span class="keyword">From</span> TableName2</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><code>ColumnNAme1</code>与<code>ColumnName2</code>中的列数，顺序，数据类型，含有必须一一对应<br><code>Select</code>语句中不能有<code>Order By</code>子句</p>
+</blockquote>
+<h2 id="联合使用Select与Update语句"><a href="#联合使用Select与Update语句" class="headerlink" title="联合使用Select与Update语句"></a>联合使用Select与Update语句</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Update</span> TableNAme1</span><br><span class="line"><span class="keyword">Set</span> ColumName1=Value1</span><br><span class="line"><span class="keyword">Where</span> 条件表达式 (<span class="keyword">Select</span> ColumnName2</span><br><span class="line">                    <span class="keyword">From</span> TableName2</span><br><span class="line">                    <span class="keyword">Where</span> 条件表达式)</span><br></pre></td></tr></table></figure>
+<h2 id="联合使用Select与Delete语句"><a href="#联合使用Select与Delete语句" class="headerlink" title="联合使用Select与Delete语句"></a>联合使用Select与Delete语句</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Delete</span> <span class="keyword">From</span> TableName1</span><br><span class="line"><span class="keyword">Where</span> 条件表达式 (<span class="keyword">Select</span> ColumnName2</span><br><span class="line">                    <span class="keyword">From</span> TableName2</span><br><span class="line">                    <span class="keyword">Where</span> 条件表达式)</span><br></pre></td></tr></table></figure>
 
           
         
@@ -2787,7 +2875,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">48k</span>
+    <span title="站点总字数">50k</span>
   
 
   
@@ -2796,7 +2884,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">44 分钟</span>
+    <span title="站点阅读时长">45 分钟</span>
   
 </div>
 
