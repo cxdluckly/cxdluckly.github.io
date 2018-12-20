@@ -126,7 +126,7 @@
 <meta property="og:description" content="SQL是什么 SQL 是用于访问和处理数据库的标准的计算机语言。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://www.caixiaodong.xyz/2018/12/11/SQL命令-数据表操作/sql.jpg">
-<meta property="og:updated_time" content="2018-12-11T02:25:39.732Z">
+<meta property="og:updated_time" content="2018-12-20T05:18:23.111Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SQL命令-数据表操作">
 <meta name="twitter:description" content="SQL是什么 SQL 是用于访问和处理数据库的标准的计算机语言。">
@@ -456,6 +456,22 @@
             
 
             
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：12月 20 2018 13:18:23" itemprop="dateModified" datetime="2018-12-20T13:18:23+08:00">12月 20 2018</time>
+              
+            
           </span>
 
           
@@ -565,16 +581,16 @@
 <li>指定索引以及索引的类型。</li>
 <li>指定数据的安区配置和访问权限。</li>
 </ol>
-<h2 id="语法格式"><a href="#语法格式" class="headerlink" title="语法格式"></a>语法格式</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Create</span> <span class="keyword">Table</span> TableName</span><br><span class="line">(</span><br><span class="line">    ColumnName1 &lt;DataType1&gt; [ColumnConstraint1],</span><br><span class="line">    ColumnName2 &lt;DataType2&gt; [columnconstraint2],</span><br><span class="line">    ...</span><br><span class="line">    [TableConstraint1],</span><br><span class="line">    [TableConstraint2],</span><br><span class="line">    ...</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<h2 id="创建表语法格式"><a href="#创建表语法格式" class="headerlink" title="创建表语法格式"></a>创建表语法格式</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Create</span> <span class="keyword">Table</span> TableName</span><br><span class="line">(</span><br><span class="line">    ColumnName1 &lt;DataType1&gt; [ColumnConstraint1],</span><br><span class="line">    ColumnName2 &lt;DataType2&gt; [columnconstraint2],</span><br><span class="line">    ...</span><br><span class="line">    [TableConstraint1],</span><br><span class="line">    [TableConstraint2],</span><br><span class="line">    ...</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 <h2 id="列级约束-ColumnConstraint"><a href="#列级约束-ColumnConstraint" class="headerlink" title="列级约束(ColumnConstraint)"></a>列级约束(ColumnConstraint)</h2><blockquote>
-<p><em>非空约束，主键约束，外键约束，唯一性约束，检查约束，默认约束</em></p>
+<p><em>非空约束，主键约束，外键约束，唯一性约束，检查约束，默认约束，标识列</em></p>
 </blockquote>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">非空约束：null|not null //默认为null.</span><br><span class="line">主键约束：primary key</span><br><span class="line">外键约束：references TableName(ColumnName) //一般为另一种表的主键</span><br><span class="line">唯一性约束：unique</span><br><span class="line">检查约束：<span class="keyword">Check</span>(逻辑表达式) //例如: Sex=<span class="string">'M'</span> <span class="keyword">or</span> Sex=<span class="string">'F'</span></span><br><span class="line">默认约束：<span class="keyword">default</span>(逻辑表达式) //例如：<span class="keyword">GetDate</span>()</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">非空约束：null|not null //默认为null.</span><br><span class="line">主键约束：primary key</span><br><span class="line">外键约束：references TableName(ColumnName) //一般为另一种表的主键</span><br><span class="line">唯一性约束：unique</span><br><span class="line">检查约束：<span class="keyword">Check</span>(逻辑表达式) //例如: Sex=<span class="string">'M'</span> <span class="keyword">or</span> Sex=<span class="string">'F'</span></span><br><span class="line">默认约束：<span class="keyword">default</span>(逻辑表达式) //例如：<span class="keyword">default</span>(<span class="keyword">getdate</span>())：获取当前时间</span><br><span class="line">标识列：<span class="keyword">identity</span>(<span class="number">1</span>,<span class="number">2</span>) //表示，起使数字为<span class="number">1</span>，每次增加<span class="number">1</span></span><br></pre></td></tr></table></figure>
 <h2 id="表级约束-TableConstrint"><a href="#表级约束-TableConstrint" class="headerlink" title="表级约束(TableConstrint)"></a>表级约束(TableConstrint)</h2><blockquote>
 <p><em>主键约束，外键约束，唯一性约束，检查约束，默认约束(同列级)</em></p>
 </blockquote>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">主键约束：[Constraint PK_TableName] Primary Key (ColumnName)</span><br><span class="line">外键约束：[Constraint FK_外表名_主表名] foreign key(外键) references 被参照的表名(被参照的列名)</span><br><span class="line">检查约束：[Constraint CK_ColumnName] <span class="keyword">Check</span>(逻辑表达式)</span><br><span class="line">唯一性约束：[<span class="keyword">Constraint</span> UQ_ColumnName] <span class="keyword">unique</span>(ColumnName)</span><br></pre></td></tr></table></figure>
-<h1 id="修改数据表Alter-Table"><a href="#修改数据表Alter-Table" class="headerlink" title="修改数据表Alter Table"></a>修改数据表Alter Table</h1><h2 id="语法格式-1"><a href="#语法格式-1" class="headerlink" title="语法格式"></a>语法格式</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Alter</span> <span class="keyword">Table</span> TableName</span><br><span class="line">    <span class="keyword">Alter</span> <span class="keyword">Column</span> ColumnName ...</span><br><span class="line">    |<span class="keyword">Add</span> ColumnName ...</span><br><span class="line">    |<span class="keyword">Drop</span> <span class="keyword">Column</span> ColumnName ...</span><br><span class="line">    |<span class="keyword">Add</span> <span class="keyword">Constraint</span> ConstraintName ...</span><br><span class="line">    |<span class="keyword">Drop</span> <span class="keyword">Constraint</span> ConstraintName ...</span><br></pre></td></tr></table></figure>
+<h1 id="修改数据表Alter-Table"><a href="#修改数据表Alter-Table" class="headerlink" title="修改数据表Alter Table"></a>修改数据表Alter Table</h1><h2 id="修改表语法格式"><a href="#修改表语法格式" class="headerlink" title="修改表语法格式"></a>修改表语法格式</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Alter</span> <span class="keyword">Table</span> TableName</span><br><span class="line">    <span class="keyword">Alter</span> <span class="keyword">Column</span> ColumnName ...</span><br><span class="line">    |<span class="keyword">Add</span> ColumnName ...</span><br><span class="line">    |<span class="keyword">Drop</span> <span class="keyword">Column</span> ColumnName ...</span><br><span class="line">    |<span class="keyword">Add</span> <span class="keyword">Constraint</span> ConstraintName ...</span><br><span class="line">    |<span class="keyword">Drop</span> <span class="keyword">Constraint</span> ConstraintName ...</span><br></pre></td></tr></table></figure>
 <h2 id="修改表名字段名"><a href="#修改表名字段名" class="headerlink" title="修改表名字段名"></a>修改表名字段名</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Exec sp_rename 'TableName','NewTableName'//修改表名</span><br><span class="line">Exec sp_rename 'TableName.ColumnName','TableName.NewColumnName'</span><br></pre></td></tr></table></figure>
 <h2 id="修改字段属性"><a href="#修改字段属性" class="headerlink" title="修改字段属性"></a>修改字段属性</h2><blockquote>
 <p>可修改的字段属性包括 <em>字段名，数据类型，数据长度，是否允许为null值等</em></p>
@@ -848,7 +864,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SQL是什么"><span class="nav-number">1.</span> <span class="nav-text">SQL是什么</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建数据表-Create-Table-TableName"><span class="nav-number">2.</span> <span class="nav-text">创建数据表 Create Table TableName</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#语法格式"><span class="nav-number">2.1.</span> <span class="nav-text">语法格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列级约束-ColumnConstraint"><span class="nav-number">2.2.</span> <span class="nav-text">列级约束(ColumnConstraint)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#表级约束-TableConstrint"><span class="nav-number">2.3.</span> <span class="nav-text">表级约束(TableConstrint)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#修改数据表Alter-Table"><span class="nav-number">3.</span> <span class="nav-text">修改数据表Alter Table</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#语法格式-1"><span class="nav-number">3.1.</span> <span class="nav-text">语法格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改表名字段名"><span class="nav-number">3.2.</span> <span class="nav-text">修改表名字段名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改字段属性"><span class="nav-number">3.3.</span> <span class="nav-text">修改字段属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加与删除字段"><span class="nav-number">3.4.</span> <span class="nav-text">添加与删除字段</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加与删除约束"><span class="nav-number">3.5.</span> <span class="nav-text">添加与删除约束</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除数据表"><span class="nav-number">3.6.</span> <span class="nav-text">删除数据表</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SQL是什么"><span class="nav-number">1.</span> <span class="nav-text">SQL是什么</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建数据表-Create-Table-TableName"><span class="nav-number">2.</span> <span class="nav-text">创建数据表 Create Table TableName</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建表语法格式"><span class="nav-number">2.1.</span> <span class="nav-text">创建表语法格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列级约束-ColumnConstraint"><span class="nav-number">2.2.</span> <span class="nav-text">列级约束(ColumnConstraint)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#表级约束-TableConstrint"><span class="nav-number">2.3.</span> <span class="nav-text">表级约束(TableConstrint)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#修改数据表Alter-Table"><span class="nav-number">3.</span> <span class="nav-text">修改数据表Alter Table</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#修改表语法格式"><span class="nav-number">3.1.</span> <span class="nav-text">修改表语法格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改表名字段名"><span class="nav-number">3.2.</span> <span class="nav-text">修改表名字段名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改字段属性"><span class="nav-number">3.3.</span> <span class="nav-text">修改字段属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加与删除字段"><span class="nav-number">3.4.</span> <span class="nav-text">添加与删除字段</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加与删除约束"><span class="nav-number">3.5.</span> <span class="nav-text">添加与删除约束</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除数据表"><span class="nav-number">3.6.</span> <span class="nav-text">删除数据表</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -889,7 +905,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">45 分钟</span>
+    <span title="站点阅读时长">46 分钟</span>
   
 </div>
 
