@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.caixiaodong.xyz/"/>
-  <updated>2018-12-17T05:58:53.399Z</updated>
+  <updated>2018-12-21T05:28:05.095Z</updated>
   <id>https://www.caixiaodong.xyz/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSharp-文件操作</title>
+    <link href="https://www.caixiaodong.xyz/2018/12/21/CSharp-%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/"/>
+    <id>https://www.caixiaodong.xyz/2018/12/21/CSharp-文件操作/</id>
+    <published>2018-12-21T05:12:37.000Z</published>
+    <updated>2018-12-21T05:28:05.095Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/2018/12/21/CSharp-文件操作/csharp.jpg&quot; alt=&quot;c#&quot;&gt;&lt;/p&gt;
+&lt;p&gt;在.NET Framework中进行的所有输入输出工作都要使用到流(stream)。流是序列化设备的抽象表示。序列化设备可以进行线性存储数据，并按照同样的方式访问：一次访问一个字节。此设备可以是磁盘文件、网络通道、内存位置、或其他支持以先行发方式读写的对象。使用文件流可以忽略每种设备的物理机制，不必担心磁盘头或内存分配问题。&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="学习" scheme="https://www.caixiaodong.xyz/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="C#" scheme="https://www.caixiaodong.xyz/tags/C/"/>
+    
+      <category term="笔记" scheme="https://www.caixiaodong.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>SQL-数据查询</title>
