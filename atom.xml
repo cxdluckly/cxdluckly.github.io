@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.caixiaodong.xyz/"/>
-  <updated>2019-01-11T11:17:14.309Z</updated>
+  <updated>2019-01-11T11:20:23.071Z</updated>
   <id>https://www.caixiaodong.xyz/</id>
   
   <author>
@@ -21,18 +21,14 @@
     <link href="https://www.caixiaodong.xyz/2019/01/11/CSharp%E6%B3%9B%E5%9E%8B/"/>
     <id>https://www.caixiaodong.xyz/2019/01/11/CSharp泛型/</id>
     <published>2019-01-11T10:24:24.000Z</published>
-    <updated>2019-01-11T11:17:14.309Z</updated>
+    <updated>2019-01-11T11:20:23.071Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;/2019/01/11/CSharp泛型/csharp.jpg&quot; alt=&quot;c#&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;泛型-Generic&quot;&gt;&lt;a href=&quot;#泛型-Generic&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;p&gt;&lt;img src=&quot;/2019/01/11/CSharp泛型/csharp.jpg&quot; alt=&quot;c#&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;泛型-Generic&quot;&gt;&lt;a href=&quot;#泛型-Generic&quot; class=&quot;headerlink&quot; title=&quot;泛型(Generic)&quot;&gt;&lt;/a&gt;泛型(Generic)&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;泛型允许您延迟编写类或方法在的编程元素的数据类型的规范，知道实际在程序中使用它。通俗来说，泛型允许您编写一个可以与任何数据类型构造的类或方法等。&lt;br&gt;你可以通过数据类型的替代参数编写类或方法的规范，当编译器遇到类的构造函数或方法的函数调用时，它会生成代码来处理指定的数据类型。&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
