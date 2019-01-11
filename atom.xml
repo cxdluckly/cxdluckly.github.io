@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.caixiaodong.xyz/"/>
-  <updated>2018-12-21T05:28:05.095Z</updated>
+  <updated>2019-01-11T11:17:14.309Z</updated>
   <id>https://www.caixiaodong.xyz/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSharp泛型</title>
+    <link href="https://www.caixiaodong.xyz/2019/01/11/CSharp%E6%B3%9B%E5%9E%8B/"/>
+    <id>https://www.caixiaodong.xyz/2019/01/11/CSharp泛型/</id>
+    <published>2019-01-11T10:24:24.000Z</published>
+    <updated>2019-01-11T11:17:14.309Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/2019/01/11/CSharp泛型/csharp.jpg&quot; alt=&quot;c#&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;泛型-Generic&quot;&gt;&lt;a href=&quot;#泛型-Generic&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="学习" scheme="https://www.caixiaodong.xyz/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="C#" scheme="https://www.caixiaodong.xyz/tags/C/"/>
+    
+      <category term="笔记" scheme="https://www.caixiaodong.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>CSharp-文件操作</title>
