@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.caixiaodong.xyz/"/>
-  <updated>2019-01-11T11:57:02.475Z</updated>
+  <updated>2019-06-05T04:08:34.747Z</updated>
   <id>https://www.caixiaodong.xyz/</id>
   
   <author>
@@ -15,6 +15,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vscode配置C语言</title>
+    <link href="https://www.caixiaodong.xyz/2019/06/05/vscode%E9%85%8D%E7%BD%AEC%E8%AF%AD%E8%A8%80/"/>
+    <id>https://www.caixiaodong.xyz/2019/06/05/vscode配置C语言/</id>
+    <published>2019-06-05T03:15:30.000Z</published>
+    <updated>2019-06-05T04:08:34.747Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;VsCode配置C语言环境&quot;&gt;&lt;a href=&quot;#VsCode配置C语言环境&quot; class=&quot;headerlink&quot; title=&quot;VsCode配置C语言环境&quot;&gt;&lt;/a&gt;VsCode配置C语言环境&lt;/h1&gt;&lt;h2 id=&quot;下载-Vscode&quot;&gt;&lt;a href=&quot;#下载-Vscode&quot; class=&quot;headerlink&quot; title=&quot;下载 Vscode&quot;&gt;&lt;/a&gt;&lt;strong&gt;下载 Vscode&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;&lt;a href=&quot;https://code.visualstudio.com/&quot; title=&quot;Vscode下载地址&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;VsCode下载地址&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;下载MinGw64&quot;&gt;&lt;a href=&quot;#下载MinGw64&quot; class=&quot;headerlink&quot; title=&quot;下载MinGw64&quot;&gt;&lt;/a&gt;&lt;strong&gt;下载MinGw64&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;&lt;a href=&quot;https://sourceforge.net/projects/mingw-w64/files/mingw-w64/&quot; title=&quot;MinGW64下载地址&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;MinGw64下载地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;上面选择你需要的版本。你可以在&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;我将MinGW安装在&lt;code&gt;D:\MinGW&lt;/code&gt;,那么在MinGW文件夹下有&lt;code&gt;bin&lt;/code&gt;文件夹，在系统环境变量的&lt;code&gt;path&lt;/code&gt;下添加一个系统变量：&lt;code&gt;D:\MinGW\bin&lt;/code&gt;。&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>c#-Socket</title>
+    <link href="https://www.caixiaodong.xyz/2019/03/08/c-Socket/"/>
+    <id>https://www.caixiaodong.xyz/2019/03/08/c-Socket/</id>
+    <published>2019-03-08T07:19:01.000Z</published>
+    <updated>2019-03-11T05:34:21.461Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="学习" scheme="https://www.caixiaodong.xyz/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="C#" scheme="https://www.caixiaodong.xyz/tags/C/"/>
+    
+      <category term="笔记" scheme="https://www.caixiaodong.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>CSharp泛型</title>
